@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAvaloniaFoldablePanel", "TestAvaloniaFoldablePanel\TestAvaloniaFoldablePanel.csproj", "{CB61818B-1B46-45CE-A8F3-E1D406804F4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Avalonia10|Any CPU = Avalonia10|Any CPU
+		Avalonia11|Any CPU = Avalonia11|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB61818B-1B46-45CE-A8F3-E1D406804F4F}.Avalonia11|Any CPU.ActiveCfg = Avalonia11|Any CPU
+		{CB61818B-1B46-45CE-A8F3-E1D406804F4F}.Avalonia11|Any CPU.Build.0 = Avalonia11|Any CPU
+		{CB61818B-1B46-45CE-A8F3-E1D406804F4F}.Avalonia10|Any CPU.ActiveCfg = Avalonia10|Any CPU
+		{CB61818B-1B46-45CE-A8F3-E1D406804F4F}.Avalonia10|Any CPU.Build.0 = Avalonia10|Any CPU
+	EndGlobalSection
+EndGlobal

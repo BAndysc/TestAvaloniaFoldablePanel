@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <DefineConstants Condition="'$(Configuration)' == 'Avalonia10'" >$(DefineConstants);AVALONIA_10</DefineConstants>
+        <DefineConstants Condition="'$(Configuration)' == 'Avalonia11'" >$(DefineConstants);AVALONIA_11</DefineConstants>
+        <Configurations>Avalonia10;Avalonia11</Configurations>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia11'" Include="Avalonia" Version="11.0.0"/>
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia11'" Include="Avalonia.Desktop" Version="11.0.0"/>
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia11'" Include="Avalonia.Themes.Fluent" Version="11.0.0"/>
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia11'" Include="Avalonia.Fonts.Inter" Version="11.0.0"/>
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia11'" Include="Avalonia.Diagnostics" Version="11.0.0"/>
+
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia10'" Include="Avalonia" Version="0.10.22"/>
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia10'" Include="Avalonia.Desktop" Version="0.10.22"/>
+        <PackageReference Condition="'$(Configuration)' == 'Avalonia10'" Include="Avalonia.Diagnostics" Version="0.10.22"/>
+    </ItemGroup>
+</Project>
